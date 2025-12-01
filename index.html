@@ -1,47 +1,107 @@
+<head>
+
+  <style>
+    .container,
+    .image-row,
+    .name-row,
+    .media-links,
+    .about {
+      border: 1px red solid;
+    }
+
+    .name-row,
+    .about,
+    .image-row,
+    h2,
+    .media-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .avatar {
+      height: 128px;
+      width: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .about-me-links {
+      text-align: center;
+      flex-grow: 1;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about {
+      text-decoration: none;
+    }
+    .link-image {
+      width: 60px;
+      height: 60px;
+    }
+    .container {}
+
+    ul {
+      list-style: none;
+    }
+  </style>
+
+</head>
+
 <body class="container">
-  
-  <img src="/images/image_of_myself.jpeg" class="avatar">
-  
-  <h1> Adolfo Nava </h1>
+  <div class="image-row">
+    <img src="/images/image_of_myself.jpeg" class="avatar">
+  </div>
+  <div class="name-row">
+    <h1> Adolfo Nava </h1>
+  </div>
   <h2>Media Links</h2>
-  <ul class="media-links">
-    <li> 
-      <a href="https://github.com/AdolfoNava" target="_blank"> <!-- Github -->
-        Github
-      </a>
-    </li>
-    <li>
-      <a href="https://dev.to/adolfonava" target="_blank"> <!-- Dev.to -->
-        Dev.to
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/adolfo-nava/" target="_blank"> <!-- LinkedIn -->
-        LinkedIn
-      </a>
-    </li>
-  </ul>
+  <div class="media-links">
+    <ul>
+      <li>
+        <a href="https://github.com/AdolfoNava" target="_blank"> <!-- Github -->
+          Github
+        </a>
+      </li>
+      <li>
+        <a href="https://dev.to/adolfonava" target="_blank"> <!-- Dev.to -->
+          Dev.to
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/adolfo-nava/" target="_blank"> <!-- LinkedIn -->
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <h2>Links about me</h2>
-  <ul class="about">
-    <li>
-      <a href="https://en.wikipedia.org/wiki/Tekken_7" target="_blank">
-        Tekken 7
-      </a>
-    </li>
-    <li>
-      <a href="https://en.wikipedia.org/wiki/Halo:_The_Master_Chief_Collection" target="_blank">
-        Halo
-      </a>
-    </li>
-    <li>
-      <a href="https://www.formula1.com/" target="_blank">
-        Formula 1
-      </a>
-    </li>
-  </ul>
+  <div class="about">
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Tekken_7" target="_blank" class="about-me-links">
+          <img src="/images/tekken.jpg" class="link-image"> Tekken 
+        </a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Halo:_The_Master_Chief_Collection" target="_blank"
+          class="about-me-links">
+          <img src="/images/mcc.jpeg" class="link-image"> Halo
+        </a>
+      </li>
+      <li>
+        <a href="https://www.formula1.com/" target="_blank" class="about-me-links">
+          <img src="/images/formula_1.png" class="link-image"> Formula 1
+        </a>
+      </li>
+    </ul>
+  </div>
 </body>
-  <!-- 
-avatar image +
+<!-- 
+    avatar image +
 
 Your Name +
 
