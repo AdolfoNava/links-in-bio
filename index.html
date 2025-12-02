@@ -1,5 +1,7 @@
 <head>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .container,
     .image-row,
@@ -9,13 +11,21 @@
       border: 1px red solid;
     }
 
+    body {
+      background-color: #2370ab97;
+    }
+
     .name-row,
     .about,
     .image-row,
-    h2,
-    .media-links {
+    h2 {
       display: flex;
       justify-content: center;
+    }
+
+    .media-links {
+      display: flex;
+      justify-content: space-evenly;
     }
 
     .avatar {
@@ -37,10 +47,12 @@
     .about {
       text-decoration: none;
     }
+
     .link-image {
       width: 60px;
       height: 60px;
     }
+
     .container {}
 
     ul {
@@ -59,23 +71,24 @@
   </div>
   <h2>Media Links</h2>
   <div class="media-links">
-    <ul>
-      <li>
-        <a href="https://github.com/AdolfoNava" target="_blank"> <!-- Github -->
-          Github
-        </a>
-      </li>
-      <li>
-        <a href="https://dev.to/adolfonava" target="_blank"> <!-- Dev.to -->
-          Dev.to
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/adolfo-nava/" target="_blank"> <!-- LinkedIn -->
-          LinkedIn
-        </a>
-      </li>
-    </ul>
+
+    <span>
+      <a href="https://github.com/AdolfoNava" target="_blank"> <!-- Github -->
+        <i class="fa-brands fa-github fa-2xl"></i>Github
+      </a>
+    </span>
+
+    <span>
+      <a href="https://dev.to/adolfonava" target="_blank"> <!-- Dev.to -->
+        <i class="fa-brands fa-dev fa-2xl"></i>Dev.to
+      </a>
+    </span>
+    <span>
+      <a href="https://www.linkedin.com/in/adolfo-nava/" target="_blank"> <!-- LinkedIn -->
+        <i class="fa-brands fa-linkedin fa-2xl"></i>LinkedIn
+      </a>
+    </span>
+
   </div>
 
   <h2>Links about me</h2>
@@ -83,7 +96,7 @@
     <ul>
       <li>
         <a href="https://en.wikipedia.org/wiki/Tekken_7" target="_blank" class="about-me-links">
-          <img src="/images/tekken.jpg" class="link-image"> Tekken 
+          <img src="/images/tekken.jpg" class="link-image"> Tekken
         </a>
       </li>
       <li>
